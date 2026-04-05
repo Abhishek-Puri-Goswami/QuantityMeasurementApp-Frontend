@@ -16,8 +16,8 @@
  *   does not affect production at all.
  */
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
@@ -25,11 +25,11 @@ export default defineConfig({
   server: {
     /*
      * Local development server port.
-     * Change this if 3000 is taken on your machine.
+     * Change this if 5173 is taken on your machine.
      * The OAuth2 redirect URI registered in Google/GitHub Console must match
-     * the actual URL you open in the browser (e.g. http://localhost:3000).
+     * the actual URL you open in the browser (e.g. http://localhost:5173).
      */
-    port: 3000,
-    open: true,   // auto-open browser tab on `npm run dev`
+    port: 5173,
+    open: true, // auto-open browser tab on `npm run dev`
   },
 });

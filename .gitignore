@@ -9,12 +9,13 @@ dist-ssr/
 build/
 
 # ── Environment variables ─────────────────────────────────────────────────────
-# .env          → COMMITTED  (safe defaults, no secrets)
+# .env          → COMMITTED  (safe defaults + full docs, no secrets)
 # .env.local    → IGNORED    (personal overrides, may contain secrets)
 # .env.*.local  → IGNORED    (per-environment personal overrides)
 #
 # NEVER commit API keys, OAuth client secrets, or database passwords.
 # Use .env.local for any value you don't want in git history.
+# See src/config/env.js for the centralised env access layer.
 .env.local
 .env.*.local
 
