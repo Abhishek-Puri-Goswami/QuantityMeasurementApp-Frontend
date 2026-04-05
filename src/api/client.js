@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { API_BASE_URL } from '../config/env';
 
-export const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+export const API_BASE = API_BASE_URL;
 const BASE_URL = `${API_BASE}/api/v1`;
 const TOKEN_KEY = 'qm_token';
 
