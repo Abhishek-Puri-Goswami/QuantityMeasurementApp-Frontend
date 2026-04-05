@@ -149,7 +149,7 @@ export default function RegisterPage() {
            * OAuth2 sign-up: these links go to the Spring Security OAuth2
            * authorization endpoint. On success, the backend redirects to
            * /oauth2/callback?token=... which OAuth2CallbackPage handles.
-           * API_BASE comes from import.meta.env.VITE_API_URL (never hardcoded).
+           * API_BASE is imported from src/api/client.js which reads it from src/config/env.js.
            */}
           <div className="social-grid">
             <a className="btn-social" href={`${API_BASE}/oauth2/authorization/google`}><GoogleIcon /> Google</a>
